@@ -322,7 +322,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -335,7 +336,11 @@ template {
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
-    color: #fff; }
+    color: #fff;
+    font-size: 0.94rem;
+    font-family: FuturaDemi;
+    max-height: 50px;
+    min-width: 14.78rem; }
 
 .container {
   width: 85%;
@@ -345,9 +350,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -386,8 +394,9 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 40px;
-  transition: color 0.2s; }
+  margin-right: 2.65rem;
+  transition: color 0.2s;
+  font-size: 0.95rem; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -419,13 +428,20 @@ body {
     top: 0;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    max-width: 670px;
-    position: relative; }
+    position: relative;
+    max-width: 47.85rem; }
   .hero__text {
-    font-size: 22px;
-    max-width: 500px; }
+    font-size: 1.33rem;
+    font-weight: normal;
+    letter-spacing: 0.0109rem;
+    max-width: 550px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 3.23rem; }
   .hero__button {
-    margin-right: 20px; }
+    margin-right: 1.428rem;
+    padding: 19px 19px; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -439,13 +455,15 @@ body {
     align-items: center;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    padding-left: 40px; }
+    padding-left: 40px;
+    font-size: 0.91rem;
+    font-family: 'Yeseva One', cursive; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -478,6 +496,46 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857rem;
+  line-height: 1.4; }
   .title--primary {
     color: #E3B873; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__contant {
+    margin-left: 0; } }
+
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__contant {
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
