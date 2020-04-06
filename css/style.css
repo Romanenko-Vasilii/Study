@@ -388,6 +388,8 @@ body {
 
 .logo {
   color: #E3B873;
+  font-size: 0.87rem;
+  font-weight: 500;
   text-transform: uppercase; }
 
 .nav__item {
@@ -396,7 +398,7 @@ body {
   text-transform: uppercase;
   margin-right: 2.65rem;
   transition: color 0.2s;
-  font-size: 0.95rem; }
+  font-size: 0.87rem; }
   .nav__item:hover {
     color: #E3B873; }
 
@@ -433,9 +435,9 @@ body {
   .hero__text {
     font-size: 1.33rem;
     font-weight: normal;
-    letter-spacing: 0.0109rem;
+    letter-spacing: 0.019rem;
     max-width: 550px;
-    line-height: 30px;
+    line-height: 2.2rem;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 3.23rem; }
@@ -497,15 +499,21 @@ body {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
-  line-height: 1.4; }
+  line-height: 1.37;
+  font-weight: normal; }
   .title--primary {
     color: #E3B873; }
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 13px; } }
 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    font-size: 0.91rem;
+    margin-right: 0.82rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -528,6 +536,9 @@ body {
     display: none; }
   .hero__contant {
     max-width: 22.86rem; }
+  .hero__title {
+    font-size: 1.64rem;
+    font-weight: normal; }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
@@ -537,5 +548,13 @@ body {
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 520px) {
+  .hero__content {
+    margin-top: 3.1rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.14rem; }
+  .hero__text {
+    font-size: 1.27rem;
+    font-weight: normal; }
   .hero__scroll-down {
     display: none; } }
