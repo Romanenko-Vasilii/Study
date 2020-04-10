@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Futura Book';
-  src: url("../fontsuturauturaBookC.woff") format("woff"), url("../fontsuturauturaBookC.woff2") format("woff2");
+  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
 
 @font-face {
   font-family: 'Futura Demi';
-  src: url("../fontsuturauturaDemiC.woff") format("woff"), url("../fontsuturauturaDemiC.woff2") format("woff2");
+  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
@@ -576,17 +576,17 @@ img {
 .desing__paragraf {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: FuturaBookC, sans-serif; }
+  align-items: center; }
 
 .desing__text {
+  font-family: 'Futura Book', sans-serif;
   text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 1.42rem;
   line-height: 1.93rem;
   color: #363636;
-  width: 62%;
+  width: 59%;
   margin-bottom: 2.8rem; }
 
 @media screen and (max-width: 1400px) {
