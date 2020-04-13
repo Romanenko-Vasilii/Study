@@ -442,7 +442,8 @@ img {
     .section-title__text {
       font-size: 1.28rem;
       line-height: 2.09rem;
-      max-width: 31.57rem; }
+      max-width: 31.57rem;
+      font-family: 'Futura Book', sans-serif; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -602,7 +603,8 @@ img {
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem; }
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -610,19 +612,36 @@ img {
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-size: 1.07rem;
+    line-height: 1.42rem;
+    font-weight: normal;
+    font-family: 'Futura Book', cursive; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3); }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
 
-.swiper-buttom-prev {
-  background-color: url(../img/arrow-left.svg) no-repeat center;
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
   background-size: 42px;
   width: 42px;
   height: 14px; }
-  .swiper-buttom-prev::after {
+  .swiper-button-prev::after, .swiper-button-next::after {
     display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url(../img/arrow-left.svg) no-repeat center; }
+
+.swiper-button-next {
+  background: url(../img/arrow-right.svg) no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -1px; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -786,7 +805,11 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .col-50 {
+    width: 100%; }
+    .col-50__top {
+      margin-top: 2.5rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
