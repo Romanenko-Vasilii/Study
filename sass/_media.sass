@@ -32,6 +32,8 @@
 
 @media screen and ( max-width: 760px  )
   .section
+    &__control
+      background: $dark
     &__desing
       background: $dark
   .desing
@@ -39,6 +41,16 @@
       color: $light
   .heading
     &--light
+      color: $light
+  .control
+    &__text
+      color: $light
+      font-size: 1rem
+      line-height: 169.8%
+      font-weight: normal
+    &__input-group
+      color: $light
+    &__policy-label
       color: $light
   .row
     flex-direction: column
@@ -57,6 +69,16 @@
     
 
 @media screen and ( max-width: 570px  )
+  .control
+    &__button
+      width: 100%
+    &__input-group
+      display: block
+      width: 100%
+      margin-top: 1rem
+      margin-bottom: 1rem
+      
+      
   .contacts
     &__phone
       margin-right: 0
@@ -94,4 +116,5 @@
       font-weight: normal
     &__scroll-down
       display: none
+  
   
