@@ -367,6 +367,8 @@ template {
     color: #fff; }
   .input--light::placeholder {
     color: #fff; }
+  .input--dark {
+    color: #131313; }
 
 .policy__checkbox {
   opacity: 0;
@@ -659,6 +661,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -1px; }
+
+.control__inpyt {
+  color: #131313; }
 
 .control__section-title {
   margin-bottom: 2.214rem;
