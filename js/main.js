@@ -80,6 +80,62 @@ $(document).ready(function () {
     }
   });
 
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlenght: "Имя не длиннее 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userQuestion: {
+        required: true,
+        minlength: 2,
+        maxlength: 30
+      },
+      
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlenght: "Имя не длиннее 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      userQuestion: {
+        required: "Вопрос обязателен",
+        minlength: "Вопрос не короче двух букв",
+        maxlenght: "Вопрос не длиннее 30 букв"
+      },
+    }
+  });
   
 
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
