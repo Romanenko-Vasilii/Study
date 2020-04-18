@@ -126,13 +126,13 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв",
-        maxlenght: "Имя не длиннее 15 букв"
+        maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: "Телефон обязателен",
       userQuestion: {
         required: "Вопрос обязателен",
         minlength: "Вопрос не короче двух букв",
-        maxlenght: "Вопрос не длиннее 30 букв"
+        maxlength: "Вопрос не длиннее 30 букв"
       },
     }
   });
