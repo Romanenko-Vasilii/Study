@@ -70,7 +70,7 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв",
-        maxlenght: "Имя не длиннее 15 букв"
+        maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: "Телефон обязателен",
       userEmail: {
@@ -97,7 +97,7 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв",
-        maxlenght: "Имя не длиннее 15 букв"
+        maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: "Телефон обязателен",
       
