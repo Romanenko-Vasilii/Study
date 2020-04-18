@@ -126,7 +126,7 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче двух букв",
-        maxlength: "Имя не длиннее 15 букв"
+        maxlength: "Имя не длиннее пятнадцати букв"
       },
       userPhone: "Телефон обязателен",
       userQuestion: {
