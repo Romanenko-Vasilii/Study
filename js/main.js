@@ -27,6 +27,13 @@ $(document).ready(function () {
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
+  
+  function press(event) {
+      if (event.keyCode == 27) {
+          modal.removeClass('modal--visible');
+      }
+  }
+  window.addEventListener('keydown', press, false);
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
